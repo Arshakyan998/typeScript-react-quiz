@@ -23,12 +23,12 @@ const TrueAnswers: React.FC<Props> = ({ items }): React.ReactElement => {
           >
             <div>
               <h1>
-             <span style={{fontSize:'15px'}}> Ваш ответ</span> <br />
+             <span style={{fontSize:'15px', color:el.isTrue?'green':'red'}}> Ваш ответ</span> <br />
                 {" "}
                 {el.quiz}: {el.text}{" "}
                 <hr />   
                    <span style={{fontSize:'15px'}}>Правильный ответ</span> <br /> 
-                {el.isTrue ?el.quiz +':'+ el.trueAnswer:el.quiz +':'+ el.trueAnswer }{" "}
+              {el.isTrue ?el.quiz +':'+ el.trueAnswer:el.quiz +':'+ el.trueAnswer }{" "}
                   
               </h1>
             </div>
