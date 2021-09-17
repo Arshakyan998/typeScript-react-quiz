@@ -124,9 +124,7 @@ const AddNewQuationBlock: React.FC = (): React.ReactElement => {
   
 
   function checkInput(inp:any[]=[],i:number=0):any{
-    inp =inputEl.current.filter(Boolean)
-   
-    
+    inp =inputEl.current.filter(Boolean) 
     if(inp[i].value===""){
       setAreTheFieldsFilled(false);
       return 

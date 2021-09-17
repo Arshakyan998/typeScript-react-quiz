@@ -91,7 +91,7 @@ export const Quiz = (): ReactElement => {
               disabled={prevDisabled}
               className={s.static}
             >
-              Предедуший
+              Предыдущий
             </button>
           )}
         </div>
